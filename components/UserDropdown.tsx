@@ -30,7 +30,7 @@ const UserDropdownElement=()=>{
                             {user.name[0]}
                         </AvatarFallback>
                     </Avatar>
-                    <div className="hideen md:flex flex-col items-start">
+                    <div className="hidden md:flex flex-col items-start">
                     <span className="text-base font-medium text-gray-400">
                         {user.name}
                     </span>
@@ -61,9 +61,9 @@ const UserDropdownElement=()=>{
                     <LogOutIcon className="h-6 w-6 hidden sm:block" />
                     logout
                     </DropdownMenuItem>
-                <DropdownMenuSeparator className="hidden sm:block bg-gray-600" />
-                <nav className="bg-gray-600">
-                    <Naveitems vertical/>
+                <DropdownMenuSeparator className="block sm:hidden bg-gray-600" />
+                <nav className="sm:hidden">
+                    <Naveitems />
                 </nav>
             </DropdownMenuContent>
         </DropdownMenu>    )
